@@ -1,0 +1,297 @@
+html,
+body {
+    height: 100% !important;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-blue {
+    border-bottom: 1px solid #dee2e6;
+}
+
+#sidebar {
+    background:whitesmoke !important;
+    border-right: 1px solid #dee2e6;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px !important;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.navbar-collapse {
+    /* flex-basis: 100%; */
+    flex-grow: 0;
+}
+#mainDiv {
+    border-bottom: 1px solid #dee2e6;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+}
+.input {
+    width: 100%;
+}
+.editorHead {
+    background-color: #111 !important;
+    color: #fff !important;s
+}
+.languages {
+    color: rgb(243, 240, 240) !important;
+}
+ul.nav.nav-tabs {
+    display: flex;
+    background-color: #111 !important;
+    color: rgb(11, 11, 11) !important;
+    /* padding: 1em 0em !important; */
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+/* #editor {
+    box-shadow: 5px 5px 5px #111;
+} */
+.commentsshow {
+    margin-top: 20px;
+}
+.comment-box {
+    margin-top: 1em;
+    background-color: #ecebeb;;
+    border-bottom: 1px solid whitesmoke;
+    border-radius: 7px;
+    padding: 0.4em;
+}
+.close-bg {
+    /* background-color: #111 !important; */
+    color: #000 !important;
+    border-radius: 50% !important;
+    padding: 0.5em !important;
+}
+.editior {
+    display: flex;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.allopenfiles div {
+    padding : 0.5em 2em 0.5em 2em;
+    background-color: #fff;
+    /* box-shadow: #222 0px 0px 5px; */
+    margin-right: 0.1em;
+}
+.top-header {
+    font-size: 25px !important;
+}
+.folder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ----------ide------------- */
+.header {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(5, 3, 3);
+    padding: 4px;
+    font-family: sans-serif;
+}
+.control-panel {
+    background: rgb(9, 7, 7);
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+.languages {
+    background: white;
+    color:black !important ;
+    border: 1px solid gray;
+    font-size: 15px;
+}
+#editor {
+    height:560px;
+}
+.button-container {
+    text-align: right;
+    padding: 4px;
+}
+
+.formfolder {
+    display: flex;
+}
+
+.file_li {
+    margin-left: 18px;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7em;
+    font-size: medium;
+    border-radius: 1em;
+}
+
+.comment-box {
+    margin-top: 1em;
+    border-bottom: 1px solid whitesmoke;
+    padding: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.comment-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: rgb(2, 1, 1);
+    /* text-shadow: 1px 1px grey; */
+}
+
+.comment-user {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.comment-time {
+    /* display: flex; */
+    flex-direction: row;
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: row;
+    color: rgb(10, 6, 6);
+}
+
+#savecomment {
+    border: none;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+#comment {
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 1em;
+    height: 100%;
+    resize: none;
+}
+.create-file-folder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.input-file-folder{
+    border: 1px solid black;
+    border-radius: 1em;
+    color: #000;
+    padding: 0.5em;
+    height: 100%;
+    resize: none;
+    font-size: 1em;
+}
+
+#sidebar{
+    height: 85vh;
+    overflow: scroll;
+    color: rgb(17, 12, 12) !important;
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .screencen{
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #sidebar{
+        height: 25vh;
+        overflow: scroll;
+    }
+    
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    #sidebar{
+        height: 25vh;
+        overflow: scroll;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    #sidebar{
+        height: 25vh;
+        overflow: scroll;
+    }
+}
+.footer {
+    box-shadow: gray 0px 0px 5px !important;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(5, 3, 3);
+    padding: 4px;
+    font-family: sans-serif;
+}
+/* text-muted */
+.text-muted {
+    color: rgb(16, 16, 16);
+}
+
+.navbar-default {
+    border-color: transparent !important;
+
+}
+/* design nav */
+nav {
+    /* background-color: #2C2E43 !important; */
+    background-color: transparent !important;
+    box-shadow: gray 0px 0px 5px !important;
+    /* text color */
+    color: #B2B1B9 !important;
+    padding: 0.5em;
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.navbar-brand {
+    color: rgb(10, 9, 9) !important;
+}
+.navbar-toggle {
+    color: rgb(23, 23, 23) !important;
+}
+
+.navbar-nav a {
+    color: rgb(16, 14, 14) !important;
+    font-style: italic !important;
+}
+
+.open >a {
+    background-color: transparent !important;
+    color: rgb(5, 5, 5) !important;
+}
+
+.dropdown-menu {
+    background-color: whitesmoke !important;
+}
+body.font-sans.antialiased {
+    background: whitesmoke;
+}
